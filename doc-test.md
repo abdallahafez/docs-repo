@@ -26,7 +26,7 @@ this will be a templete for creating a document to be used .
 ![abdallah](./11.jpg)
 
 ## bash language 
-```bash
+``` bash
 sh script.sh 
 ls 
 ```
