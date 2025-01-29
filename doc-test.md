@@ -11,10 +11,12 @@ this will be a templete for creating a document to be used .
   * point related to third (tap after the *)
   * another point
 * (shift tap)
-  
-  1. task1 
-  2. task2 
-  3. task3 
+
+ * لتتجنب كتابة اﻷرقام باللغة الرومانية لا تترك مسافات في البداية , ويمكنك استخدام مسافة او تاب للكتابة الارقام الرومانية كترقيم فرعي 
+1. task1 
+2. task2 
+3. task3 
+
 
 |name|age|type|
 |--|---|---|
@@ -58,5 +60,10 @@ def sum(x,y):
 تكبير وتلوين الخط
 
 <span style="font-size:18px; color:blue;">This is blue and larger text.</span>
+![red-text](https://img.shields.io/badge/This_text_is_red-red)
 
- 
+
+```diff
+- This text will appear red in GitHub.
++ This text will appear green.
+```
