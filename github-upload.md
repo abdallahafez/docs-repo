@@ -3,7 +3,7 @@
 * لابد من أن تبدأ من أول السطر ولا تترك مسافات كما هو موضح  
 ``` bash
 git clone https://github.com/abdallahafez/docs-repo.git
-git github-upload.md
+git add github-upload.md
 git commit -m "adding the github uploade file "
 git push -u ssh-origin main
 ```
