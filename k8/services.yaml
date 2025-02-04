@@ -1,0 +1,54 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: kubernetes-bootcamp
+  namespace: default
+  uid: 223c10ef-93fc-4441-aa44-168f506f8489
+  resourceVersion: '18493'
+  creationTimestamp: '2025-01-31T12:37:00Z'
+  labels:
+    app: kubernetes-bootcamp
+  managedFields:
+    - manager: kubectl-expose
+      operation: Update
+      apiVersion: v1
+      time: '2025-01-31T12:37:00Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:app: {}
+        f:spec:
+          f:externalTrafficPolicy: {}
+          f:internalTrafficPolicy: {}
+          f:ports:
+            .: {}
+            k:{"port":8080,"protocol":"TCP"}:
+              .: {}
+              f:port: {}
+              f:protocol: {}
+              f:targetPort: {}
+          f:selector: {}
+          f:sessionAffinity: {}
+          f:type: {}
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      nodePort: 32222
+  selector:
+    app: kubernetes-bootcamp
+  clusterIP: 10.97.167.213
+  clusterIPs:
+    - 10.97.167.213
+  type: NodePort
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  internalTrafficPolicy: Cluster
+status:
+  loadBalancer: {}

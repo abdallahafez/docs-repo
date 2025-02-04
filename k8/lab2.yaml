@@ -1,0 +1,21 @@
+apiVersion: apps/v1 
+kind: ReplicaSet
+metadata: 
+  name: hafez-rs # the name of RS
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      env: prod #thr label for RS and must match with pod label
+      tier: frontend #the label may contain one or more labels
+        # اللابل الموجود هنا لا بد أن يكون موجود بالبود وليس العكس فيمكن أن يحتوي البود على لابل غير موجود هنا 
+  template: 
+    metadata: # tempelet configuration is for the pod 
+      name: hafez
+      labels:
+        env: prod
+        tier: frontend
+    spec:
+      containers:
+        - name: nginx
+          image: nginx

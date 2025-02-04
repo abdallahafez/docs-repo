@@ -1,0 +1,22 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata: 
+  name: hafez-deploy # the name of Deployment
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      env: prod #thr label for Deplyment and must match with pod label
+        # اللابل الموجود هنا لا بد أن يكون موجود بالبود وليس العكس فيمكن أن يحتوي البود على لابل غير موجود هنا 
+  template: 
+    metadata: # tempelet configuration is for the pod 
+      name: hafez
+      labels:
+        env: prod
+        tier: frontend
+    spec:
+      containers:
+        - name: google-sample-deploy
+          image: gcr.io/google-samples/kubernetes-bootcamp:v1
+          ports:
+            - containerPort: 8008 # know the port from the docker hube or something like that 
