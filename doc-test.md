@@ -3,14 +3,12 @@
 ### smaller topics
 this will be a templete for creating a document to be used . 
 
-* first topic
 * هل من الممكن الكتابة باللغة العربية 
 * <div dir="rtl"> مرحبًا بكم في مستند اللغة العربية! </div>
-* second topic 
-* third topic 
+* third topic (العناوين الفرعية)
   * point related to third (tap after the *)
   * another point
-* (shift tap)
+* (shift tap) حتى تعود الى العناوين الرئيسية
 
  * لتتجنب كتابة اﻷرقام باللغة الرومانية لا تترك مسافات في البداية , ويمكنك استخدام مسافة او تاب للكتابة الارقام الرومانية كترقيم فرعي 
 1. task1 
@@ -65,5 +63,6 @@ def sum(x,y):
 
 ```diff
 - This text will appear red in GitHub.
+- هذا لاتستخدام اللوت الاحمر 
 + This text will appear green.
 ```

@@ -19,4 +19,4 @@ spec:
         - name: google-sample-deploy
           image: gcr.io/google-samples/kubernetes-bootcamp:v1
           ports:
-            - containerPort: 8008 # know the port from the docker hube or something like that 
+            - containerPort: 8080 # know the port from the docker hube or something like that 
